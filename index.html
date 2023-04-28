@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <nav class="navbar navbar-expand-md" id="nav-bar">
+          <div class="container-fluid">
+            <a href="" id="logo"
+              ><img
+                src="https://www.svgrepo.com/show/477594/chair-9.svg"
+                id="header-img"
+              />Chair</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#second-section">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#third-section">How It Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#fourth-section">Pricing</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section id="first-section">
+        <div class="content">
+          <span class="span-content introducing">Introducing</span>
+          <span class="logo span-content">Chair</span>
+          <span class="span-content span-btn"
+            ><a id="register-btn" href="#fifth-section">Register Now</a></span
+          >
+        </div>
+        <div class="image">
+          <img
+            src="https://images.unsplash.com/photo-1429087969512-1e85aab2683d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            alt="chair-with-a-balloon"
+            class="image"
+          />
+        </div>
+      </section>
+
+      <section id="second-section">
+        <div id="features-container">
+          <div class="feature">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              id="performance"
+              class="feature-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11 9V13.1707C9.83481 13.5825 9 14.6938 9 16C9 17.6569 10.3431 19 12 19C13.6569 19 15 17.6569 15 16C15 14.6938 14.1652 13.5825 13 13.1707V9H11ZM11 16C11 15.4477 11.4477 15 12 15C12.5523 15 13 15.4477 13 16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16Z"
+                fill="currentColor"
+              />
+              <path
+                d="M12 5C15.866 5 19 8.13401 19 12V13H17V12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12V13H5V12C5 8.13401 8.13401 5 12 5Z"
+                fill="currentColor"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span class="feature-heading">Performance</span>
+            <p class="feature-content">Back support to assist posture</p>
+            <p class="feature-content">
+              Legs that are adjustable with your own saw*
+            </p>
+            <p class="not-included">*not included with Chair</p>
+          </div>
+          <div class="feature">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              id="thermometer"
+              class="feature-icon"
+            >
+              <path
+                d="M12 19C12.5523 19 13 18.5523 13 18C13 17.4477 12.5523 17 12 17C11.4477 17 11 17.4477 11 18C11 18.5523 11.4477 19 12 19Z"
+                fill="currentColor"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15 13.9997C16.2144 14.9119 17 16.3642 17 18C17 20.7614 14.7614 23 12 23C9.23858 23 7 20.7614 7 18C7 16.3642 7.78555 14.9119 9 13.9997V4C9 2.34315 10.3431 1 12 1C13.6569 1 15 2.34315 15 4V13.9997ZM13 4V15.1707C14.1652 15.5826 15 16.6938 15 18C15 19.6569 13.6569 21 12 21C10.3431 21 9 19.6569 9 18C9 16.6938 9.83481 15.5826 11 15.1707V4C11 3.44772 11.4477 3 12 3C12.5523 3 13 3.44772 13 4Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span class="feature-heading">Temperature</span>
+            <p class="feature-content">
+              Increases temperature the longer you sit in it
+            </p>
+            <p class="feature-content">
+              Decreases if left empty for period of time
+            </p>
+            <p class="not-included"></p>
+          </div>
+          <div class="feature">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="feature-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2.5 6.09143L7.21997 10.8114L12.0005 6.03088L16.7811 10.8114L21.5 6.09245V14.9691C21.5 16.626 20.1569 17.9691 18.5 17.9691H5.5C3.84314 17.9691 2.5 16.626 2.5 14.9691V6.09143ZM19.5 10.9087V14.9691C19.5 15.5214 19.0523 15.9691 18.5 15.9691H5.5C4.94771 15.9691 4.5 15.5214 4.5 14.9691V10.9077L7.21997 13.6277L12.0005 8.84717L16.7811 13.6277L19.5 10.9087Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span class="feature-heading">royalty</span>
+            <p class="feature-content">
+              Crown yourself the royal master of your throne
+            </p>
+            <p class="feature-content">Command armies with maximum comfort</p>
+            <p class="not-included"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="third-section">
+        <iframe
+          src="https://www.youtube.com/embed/Nwh5W3tTw8w?controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          id="video"
+        ></iframe>
+      </section>
+
+      <section id="fourth-section">
+        <div id="price-container">
+          <div class="price-section" id="basic-price">
+            <h3 class="price-type">Basic</h3>
+            <ul class="price-ul">
+              <li class="price-li">3 legs</li>
+              <hr />
+              <li class="price-li">
+                Back rest that only goes a quarter of the way up your spine
+              </li>
+              <hr />
+              <li class="price-li">No adjustable height</li>
+              <hr />
+              <li class="price price-li">$9.99 / month</li>
+            </ul>
+            <button class="price-btn" id="basic-btn">Select</button>
+          </div>
+          <div class="price-section" id="standard-price">
+            <h3 class="price-type">Standard</h3>
+            <ul class="price-ul">
+              <li class="price-li">3 legs</li>
+              <hr />
+              <li class="price-li">
+                Back rest that only goes a quarter of the way up your spine
+              </li>
+              <hr />
+              <li class="price-li">No adjustable height</li>
+              <hr />
+              <li class="price price-li">$29.99 / month</li>
+            </ul>
+            <button class="price-btn" id="standard-btn">Select</button>
+          </div>
+          <div class="price-section" id="premium-price">
+            <h3 class="price-type">Premium</h3>
+            <ul class="price-ul">
+              <li class="price-li">3.5 legs</li>
+              <hr />
+              <li class="price-li">
+                Back rest that only goes a quarter of the way up your spine
+              </li>
+              <hr />
+              <li class="price-li">No adjustable height</li>
+              <hr />
+              <li class="price price-li">$49.99 / month</li>
+            </ul>
+            <button class="price-btn" id="premium-btn">Select</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="fifth-section">
+        <div id="form-container">
+          <h2 id="register-here">Register for more information here</h2>
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email here..."
+            />
+            <input type="submit" id="submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

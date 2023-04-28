@@ -1,0 +1,553 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto Slab", serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  width: 100vw;
+  min-height: 10vh;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  background: linear-gradient(
+    90deg,
+    rgb(147, 167, 178),
+    rgb(200, 200, 200),
+    rgb(220, 220, 220),
+    rgb(220, 220, 220),
+    rgb(200, 200, 200),
+    rgb(220, 220, 220)
+  );
+}
+
+#header-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+}
+
+#logo {
+  height: 32px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+
+#logo:hover {
+  margin-left: 5px;
+  letter-spacing: 10px;
+}
+
+.navbar {
+  width: 100vw;
+  padding: 0;
+}
+
+#navbarTogglerDemo02 {
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.navbar-toggler {
+  margin-right: 20px;
+}
+
+nav > ul {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+nav li {
+  font-size: 1.4rem;
+  padding: 22.5px 15px;
+  transition: 0.15s;
+}
+
+nav li:hover {
+  background-color: #bbb;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgb(147, 167, 178),
+    rgb(200, 200, 200),
+    rgb(220, 220, 220),
+    rgb(220, 220, 220),
+    rgb(200, 200, 200),
+    rgb(220, 220, 220)
+  );
+}
+
+#first-section {
+  margin-top: 10vh;
+}
+
+.content {
+  width: 50vw;
+  height: 30vh;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.introducing {
+  display: block;
+  font-size: 1.1rem;
+  letter-spacing: 1.2px;
+}
+
+span:nth-of-type(2) {
+  display: block;
+  margin-top: 20px;
+  text-shadow: -5px 0px 10px #555;
+}
+
+span:nth-of-type(3) {
+  display: block;
+  margin-top: 80px;
+}
+
+.logo {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 40px;
+  margin: 5px auto 0 35px;
+  color: #222;
+}
+
+#register-btn {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  background-color: rgb(245, 240, 240);
+  padding: 15px;
+  border-radius: 30px;
+  transition: 0.15s;
+}
+
+#register-btn:hover {
+  background-color: rgb(99, 148, 197);
+  padding: 20px;
+  font-size: 1.3rem;
+  color: rgb(245, 240, 240);
+  cursor: pointer;
+}
+
+#register-btn:active {
+  background-color: lightgreen;
+}
+
+.image {
+  width: 50vw;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.2s;
+}
+
+#second-section {
+  background: linear-gradient(
+    90deg,
+    rgb(150, 150, 150),
+    rgb(200, 200, 200),
+    rgb(220, 220, 220),
+    rgb(220, 220, 220),
+    rgb(200, 200, 200),
+    rgb(220, 220, 220)
+  );
+}
+
+#features-container {
+  width: 75%;
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 0px 10px black;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 33.33%;
+  height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.feature:hover {
+  box-shadow: 0px 0px 20px black;
+  color: #b62203;
+}
+
+.feature-icon,
+.feature-heading,
+.feature-content,
+.not-included {
+  height: 10%;
+  width: 90%;
+  object-fit: contain;
+}
+
+.feature-icon {
+  margin-top: 20px;
+}
+
+.feature-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.feature-content {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1.15px;
+}
+
+.not-included {
+  font-size: 8px;
+}
+
+#video {
+  width: 100vw;
+  height: 100vh;
+}
+
+#fourth-section {
+  background: linear-gradient(
+    90deg,
+    rgb(150, 150, 150),
+    rgb(200, 200, 200),
+    rgb(220, 220, 220),
+    rgb(220, 220, 220),
+    rgb(200, 200, 200),
+    rgb(220, 220, 220)
+  );
+}
+
+#price-container {
+  width: 90%;
+  height: 75%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.price-section {
+  width: 33%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#basic-price {
+  background-color: #ccc;
+}
+
+#standard-price {
+  background-color: #dedede;
+}
+
+#premium-price {
+  background: linear-gradient(
+    180deg,
+    rgb(145, 175, 220),
+    rgb(190, 225, 220),
+    rgb(145, 175, 220)
+  );
+}
+
+.price-type {
+  display: block;
+  text-align: center;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.price-ul {
+  padding: 0;
+}
+
+.price-li {
+  display: block;
+  width: 75%;
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin: 15px auto 0 auto;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+hr {
+  width: 75%;
+  margin: 0.75rem auto;
+}
+
+.price-btn {
+  display: block;
+  padding: 5px 20px;
+  border-radius: 10px;
+  opacity: 85%;
+  transition: 0.1s;
+  background: linear-gradient(
+    90deg,
+    rgb(230, 230, 230),
+    rgb(240, 240, 240),
+    rgb(230, 230, 230)
+  );
+}
+
+.price-btn:hover {
+  padding: 7px 22px;
+  color: rgb(245, 240, 240);
+  background: rgb(99, 148, 197);
+}
+
+.price-btn:active {
+  background-color: lightgreen;
+}
+
+#fifth-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(
+    90deg,
+    rgb(147, 167, 178),
+    rgb(200, 200, 200),
+    rgb(220, 220, 220),
+    rgb(220, 220, 220),
+    rgb(200, 200, 200),
+    rgb(220, 220, 220)
+  );
+}
+
+#form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  height: 50vh;
+  width: 100vw;
+}
+
+#register-here {
+  display: block;
+}
+
+#form {
+  display: block;
+  width: 60vh;
+}
+
+#email {
+  margin-right: 20px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#submit {
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+#submit:hover {
+  padding: 5px 14px;
+  color: rgb(245, 240, 240);
+  background: rgb(99, 148, 197);
+}
+
+@media (max-width: 940px) {
+  #header-img,
+  #logo {
+    height: 20px;
+    font-size: 1.2rem;
+  }
+
+  section {
+    height: 95vh;
+  }
+
+  .feature-icon {
+    height: 8%;
+  }
+
+  .feature-content {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    display: block;
+  }
+
+  #logo {
+    margin: 20px 0;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  #first-section {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .content {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .introducing {
+    display: block;
+    letter-spacing: 1.2px;
+  }
+
+  .span-content {
+    display: block;
+  }
+
+  .logo {
+    margin: 0 auto;
+    padding-left: 40px;
+  }
+
+  span:nth-of-type(3) {
+    margin-top: 30px;
+  }
+
+  #register .image {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  #features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    height: 33.33%;
+  }
+
+  .feature:active,
+  .feature:hover {
+    transform: scale(1.1);
+    z-index: 5;
+    box-shadow: none;
+  }
+
+  .feature-heading {
+    font-size: 1.2rem;
+  }
+
+  .feature-content {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+
+  .not-included {
+    margin: 20px 0 0 0;
+  }
+
+  .price-type {
+    font-size: 1.2rem;
+  }
+
+  .price-li {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+
+  .price-btn {
+    padding: 10px 20px;
+  }
+
+  .price-btn:hover {
+    padding: 11px 22px;
+  }
+}
+
+/* SECTION GRADIENT COLORS */
+
+/* 90deg,
+rgb(150, 150, 150), 
+rgb(200, 200, 200), 
+rgb(220, 220, 220), 
+rgb(220, 220, 220),
+rgb(200, 200, 200), 
+rgb(220, 220, 220) */
+
+/* 90deg, 
+  rgb(147, 167, 178),
+  rgb(200, 200, 200), 
+  rgb(220, 220, 220),
+  rgb(220, 220, 220),
+  rgb(200, 200, 200), 
+  rgb(220, 220, 220) */
